@@ -1,0 +1,602 @@
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    position: fixed;
+    background-color: white;
+    top: 0%;
+    z-index: 999;
+
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 10px;
+
+}
+
+.nav ul li a {
+    margin: 10px;
+    padding: 25px;
+    font-weight: bolder;
+    color: rgb(95, 95, 95);
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+
+.nav i {
+    font-size: 25px;
+    color: aqua;
+    display: none;
+
+}
+
+.nav ul li a:hover {
+    color: aqua;
+
+}
+
+.nav ul button:hover {
+    color: whitesmoke;
+    background-color: aqua;
+    transition: .5s;
+}
+
+.nav h1 {
+
+    margin: 15px;
+    font-size: 30px;
+}
+
+.nav button {
+    width: 150px;
+    height: 40px;
+    margin-top: -5px;
+    background-color: whitesmoke;
+    color: rgb(87, 87, 87);
+    font-size: 20px;
+    border: 5px solid whitesmoke;
+    border-radius: 10px;
+
+}
+
+/* ============================================Body======================================================= */
+.parent {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.parent .par {
+    text-align: right;
+    display: inline-block;
+    margin: 140px;
+    font-weight: bolder;
+    width: 30%;
+}
+
+.parent .par h1 {
+    color: black;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.parent .par p {
+    font-size: 30px;
+    color: rgb(147, 147, 147);
+}
+
+.parent .photo {
+    width: 50%;
+    height: auto;
+    float: left;
+    object-fit: cover;
+    object-position: bottom;
+    animation-name: sigma;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+.parent .photo img {
+    width: 100%
+}
+
+@keyframes sigma {
+    25% {
+        transform: translateY(30px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    75% {
+        transform: translateY(30px);
+    }
+}
+
+.par button {
+    width: 80px;
+    color: white;
+    font-size: 25px;
+    background-color: aqua;
+    height: 50px;
+    border: 1px aqua solid;
+    border-radius: 15px;
+}
+
+/* ================================================================================== */
+.parent2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    text-align: right;
+
+}
+
+.parent2 .des {
+    width: 49%;
+    height: auto;
+    background-color: whitesmoke;
+    margin: 10px;
+    padding-right: 25px;
+}
+
+.parent2 .we {
+    width: 49%;
+    height: auto;
+    background-color: whitesmoke;
+    margin: 10px;
+    padding-right: 25px;
+}
+
+.parent2 .des i {
+    padding: 15px;
+    color: aqua;
+    font-size: 40px;
+}
+
+.parent2 .we i {
+    padding: 15px;
+    color: aqua;
+    font-size: 40px;
+}
+
+.parent2 p {
+    font-size: 25px;
+    color: rgb(87, 87, 87);
+}
+
+
+/* ======================================== */
+.parent3 {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.parent3 .we2 {
+    width: 45%;
+    height: auto;
+    font-size: 22px;
+    margin: 20px;
+    text-align: right;
+}
+
+.parent3 .photo2 {
+    max-width: 50%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.parent3 .photo2 img {
+    width: 100%;
+}
+
+
+/* =============================================== */
+.spacial {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.spacial .card {
+    width: 20%;
+    height: 100px;
+    background-color: whitesmoke;
+    margin: 15px;
+}
+
+/* ================================================================= */
+.row {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin: 25px;
+    font-size: 20px;
+
+}
+
+.row h1 {
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* =========================================================== */
+.address {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: aqua;
+}
+
+.form {
+    margin-top: 20px;
+    border-top: 5px solid aqua;
+    border-bottom: 5px solid aqua;
+    background-color: whitesmoke;
+    width: 50%;
+    height: 777px;
+}
+
+.form .mm {
+    width: 100%;
+    height: 50px;
+
+    font-size: 20px;
+    margin: 15px;
+}
+
+.form input {
+    font-size: 10px;
+    height: 25px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background:aqua;
+    transition: .5s;
+
+}
+.form input:hover{
+    transform: scale(1.1);
+}
+
+.form .nn {
+    width: 100%;
+    height: 50px;
+    margin: 15px;
+    font-size: 20px;
+}
+
+.form .ll {
+    width: 100%;
+    height: 200px;
+
+    margin: 15px;
+    font-size: 20px;
+}
+
+.form button {
+    width: 90px;
+    color: white;
+    font-size: 25px;
+    background-color: aqua;
+    height: 50px;
+    border: 1px aqua solid;
+    border-radius: 15px;
+    margin: auto;
+    float: right;
+
+}
+
+.form .buttom {
+    width: 50%;
+    margin-top: 30px;
+}
+
+
+.map {
+    width: 40%;
+    margin: 25px;
+    background-color: whitesmoke;
+    height: auto;
+    text-align: right;
+    float: right;
+    border-top: 5px solid aqua;
+    border-bottom: 5px solid aqua;
+}
+
+.map h1:hover {
+    color: aqua;
+    margin-right: 15px;
+}
+
+.map h1 i {
+    float: left;
+    color: aqua;
+    margin-left: 30px;
+}
+
+.map iframe {
+    width: 400px;
+}
+
+/*=========================================*/
+.spacial .card {
+    padding: 20px;
+    color: aqua;
+    font-size: 30px;
+}
+
+.spacial .card h1 {
+    color: black;
+    font-size: 20px;
+}
+
+/* ================================== */
+.footer {
+    width: 90%;
+    height: auto;
+    text-align: center;
+    background-color: whitesmoke;
+    margin: auto;
+
+}
+
+.footer .icons {
+    margin: 15px;
+    font-size: 25px;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+    background-color: whitesmoke;
+    margin-top: 20px;
+    margin: 15px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content p a {
+    font-size: 30px;
+    color: aqua;
+    justify-content: space-between;
+
+}
+
+.footer-bottom a {
+    color: aqua;
+
+
+}
+
+.footer-bottom {
+    width: 20%;
+    float: right;
+
+}
+
+.footer-right {
+    float: left;
+    width: 50%;
+}
+
+.footer-mid {
+    width: 95%;
+}
+
+
+@media(max-width:768px) {
+
+    .parent .photo {
+        width: 100%;
+    }
+
+    .parent .par {
+        width: 100% !important;
+    }
+
+    .parent2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .parent2 .we {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .parent2 .des {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .parent3 {
+        width: 90% !important;
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .parent3 .we2 {
+        width: 100% !important;
+    }
+
+    .parent3 .photo2 {
+        max-width: 100% !important;
+    }
+
+    .spacial .card {
+        width: 90%;
+    }
+
+    .spacial {
+        width: 100% !important;
+    }
+
+    .address textarea {
+        width: 90%;
+    }
+
+    .map iframe {
+        width: 303px;
+    }
+}
+
+
+
+
+
+
+
+
+@media(max-width:750px) {
+    .home {
+        width: 100%;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    .nav ul {
+        display: none;
+    }
+
+    .nav .h1 {
+        margin-left: 0px;
+    }
+
+    .nav i {
+        display: block;
+        font-size: 25px;
+        float: right;
+        margin: 25px;
+
+    }
+
+    .parent {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .parent .photo {
+        width: 100%;
+        margin: auto 0px;
+
+    }
+
+
+    .parent .par {
+        width: 40%;
+        margin: auto;
+        float: right;
+
+
+
+    }
+
+    .parent2 {
+        margin: auto;
+        width: 100%;
+    }
+
+    .parent3 {
+        width: 90%;
+
+    }
+
+    .parent3 .we2 {
+        width: 40%;
+        margin: auto;
+        float: right;
+
+    }
+
+    .parent3 .photo2 {
+        width: auto;
+        display: block;
+        margin: auto 0px;
+
+    }
+
+    .spacial {
+        width: 60%;
+        margin: auto;
+    }
+
+    .address {
+        display: inline;
+    }
+
+    .address .form {
+        width: 90%;
+        margin: auto;
+    }
+
+    .address .map {
+        width: 90%;
+        margin: auto;
+        margin: 33px;
+
+    }
+
+    .footer-content {
+        width: 90%;
+    }
+
+    .footer-mid {
+        width: 90%;
+    }
+}
+
+
+
+
+
+.top{
+    font-size: 40px;
+    background-color: aqua;
+    border-radius: 20px;
+    position: fixed;
+    right: 10px;
+    bottom: 30px;
+
+}
